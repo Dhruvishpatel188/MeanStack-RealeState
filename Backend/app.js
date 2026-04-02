@@ -11,7 +11,7 @@ app.use(cors()) // all ports are allowed
 app.use(express.json()) // accept JSON body globally
 
 // require dbConnection file and get connection here...
-const dbConnection = require("./src/utils/dbConnection")
+const dbConnection = require("./src/utils/dbConnection.js")
 // call dbConnection function
 dbConnection.dbConnection()
 
