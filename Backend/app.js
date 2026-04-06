@@ -17,3 +17,6 @@ dbConnection.dbConnection()
 
 const userRoutes = require("./src/routes/UserRoutes")
 app.use("/api/user", userRoutes)
+
+const supportRoutes = require("./src/routes/SupportTicketRoutes")
+app.use("/api/support", supportRoutes)
