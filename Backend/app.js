@@ -27,3 +27,7 @@ app.use("/api/property", propertyRoutes)
 const visitRoutes = require("./src/routes/PropertyVisitRoutes")
 app.use("/api/visit", visitRoutes)
 
+const reviewRoutes = require("./src/routes/ReviewRoutes")
+app.use("/api/review", reviewRoutes)
+
+
