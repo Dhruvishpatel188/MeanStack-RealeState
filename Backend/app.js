@@ -20,3 +20,10 @@ app.use("/api/user", userRoutes)
 
 const supportRoutes = require("./src/routes/SupportTicketRoutes")
 app.use("/api/support", supportRoutes)
+
+const propertyRoutes = require("./src/routes/PropertyRoutes")
+app.use("/api/property", propertyRoutes)
+
+const visitRoutes = require("./src/routes/PropertyVisitRoutes")
+app.use("/api/visit", visitRoutes)
+
