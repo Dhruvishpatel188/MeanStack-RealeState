@@ -7,7 +7,12 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "keywords": ["real-estate", "mern", "node", "express"],
+  "keywords": [
+    "real-estate",
+    "mern",
+    "node",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
