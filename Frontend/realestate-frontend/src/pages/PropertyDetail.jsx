@@ -47,7 +47,9 @@ export default function PropertyDetail() {
     try {
       const res = await reviewAPI.getByProperty(id)
       setReviews(res.data.data || [])
-    } catch {}
+    } catch (err) {
+      // Silently ignore or log review loading error
+    }
   }
 
   const handleInquiry = async (e) => {

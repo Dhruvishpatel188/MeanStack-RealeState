@@ -1,0 +1,86 @@
+.prop-card {
+  display: flex; flex-direction: column;
+  background: var(--white); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); overflow: hidden;
+  transition: var(--transition); border: 1px solid var(--border);
+}
+.prop-card:hover {
+  box-shadow: var(--shadow-lg); transform: translateY(-4px);
+}
+
+.prop-img-wrap {
+  position: relative; overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.prop-img-wrap img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.prop-card:hover .prop-img-wrap img { transform: scale(1.05); }
+
+.prop-badges {
+  position: absolute; top: 12px; left: 12px;
+  display: flex; gap: 6px;
+}
+
+.fav-btn {
+  position: absolute; top: 12px; right: 12px;
+  width: 34px; height: 34px; background: white;
+  border: none; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-sm); color: var(--text-3);
+  transition: var(--transition); font-size: 1rem;
+}
+.fav-btn:hover, .fav-btn.active { color: var(--primary); transform: scale(1.1); }
+.fav-btn.active svg { fill: var(--primary); }
+.fav-btn.loading { opacity: 0.5; cursor: not-allowed; }
+
+.prop-type-tag {
+  position: absolute; bottom: 12px; right: 12px;
+  background: rgba(0,0,0,0.55); color: white;
+  padding: 3px 10px; border-radius: 99px; font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.04em; text-transform: uppercase; backdrop-filter: blur(4px);
+}
+
+.prop-body { padding: 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+
+.prop-price {
+  font-family: var(--font-serif);
+  font-size: 1.3rem; color: var(--primary); font-weight: 400;
+}
+
+.prop-title {
+  font-size: 0.95rem; font-weight: 600; color: var(--dark);
+  line-height: 1.4; display: -webkit-box;
+  -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.prop-location {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 0.82rem; color: var(--text-3);
+}
+.prop-location svg { flex-shrink: 0; }
+
+.prop-specs {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  padding: 10px 0; border-top: 1px solid var(--border);
+  margin-top: 4px;
+}
+.prop-specs span {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 0.82rem; color: var(--text-2); font-weight: 500;
+}
+
+.prop-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border);
+}
+.prop-furnish {
+  font-size: 0.76rem; background: var(--bg);
+  padding: 3px 10px; border-radius: 99px;
+  color: var(--text-2); border: 1px solid var(--border);
+}
+.prop-owner {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 0.78rem; color: var(--text-3);
+}

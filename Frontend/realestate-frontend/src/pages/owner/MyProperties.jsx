@@ -12,7 +12,6 @@ const formatPrice = (p) => {
 }
 
 export default function MyProperties() {
-  const navigate = useNavigate()
   const [properties, setProperties] = useState([])
   const [loading, setLoading] = useState(true)
 

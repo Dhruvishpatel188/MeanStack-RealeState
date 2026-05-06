@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { FiFilter, FiX, FiSearch, FiGrid, FiList } from 'react-icons/fi'
 import { propertyAPI } from '../services/api'

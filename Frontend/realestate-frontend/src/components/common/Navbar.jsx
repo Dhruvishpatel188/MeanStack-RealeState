@@ -9,7 +9,7 @@ import {
 import './Navbar.css'
 
 export default function Navbar() {
-  const { user, logout, isAdmin, isAgent, isOwner, isBuyer } = useAuth()
+  const { user, logout, isAdmin, isAgent, isOwner } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const [mobileOpen, setMobileOpen] = useState(false)
